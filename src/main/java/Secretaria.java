@@ -1,10 +1,10 @@
-public class Atendente implements Pessoa {
+public class Secretaria implements Pessoa {
 
     private int matricula;
     private String nome;
     private Setor setor;
 
-    public Atendente(int matricula, String nome, Setor setor) {
+    public Secretaria(int matricula, String nome, Setor setor) {
         this.matricula = matricula;
         this.nome = nome;
         this.setor = setor;
@@ -23,7 +23,7 @@ public class Atendente implements Pessoa {
     }
 
     public String aceitar(Visitor visitor) {
-        return visitor.exibirAtendente(this);
+        return visitor.exibirSecretaria(this);
     }
 
 }

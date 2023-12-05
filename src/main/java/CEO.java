@@ -1,10 +1,10 @@
-public class Diretor implements Pessoa {
+public class CEO implements Pessoa {
 
     private String cpf;
     private String nome;
     private float salario;
 
-    public Diretor(String cpf, String nome, float salario) {
+    public CEO(String cpf, String nome, float salario) {
         this.cpf = cpf;
         this.nome = nome;
         this.salario = salario;
@@ -23,7 +23,7 @@ public class Diretor implements Pessoa {
     }
 
     public String aceitar(Visitor visitor) {
-        return visitor.exibirDiretor(this);
+        return visitor.exibirCEO(this);
     }
 
 }

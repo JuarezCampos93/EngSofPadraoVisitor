@@ -4,11 +4,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PessoaVisitorTest {
     @Test
-    void deveExibirAtendente() {
-        Atendente aluno = new Atendente(1, "Ana", new Setor("Vendas"));
+    void deveExibirSecretaria() {
+        Secretaria aluno = new Secretaria(1, "Ana", new Setor("Vendas"));
 
         PessoaVisitor visitor = new PessoaVisitor();
-        assertEquals("Atendente{matricula=1, nome='Ana', setor='Vendas'}", visitor.exibir(aluno));
+        assertEquals("Secretaria{matricula=1, nome='Ana', setor='Vendas'}", visitor.exibir(aluno));
     }
 
     @Test
@@ -20,11 +20,11 @@ class PessoaVisitorTest {
     }
 
     @Test
-    void deveExibirDiretor() {
-        Diretor diretor = new Diretor("123", "Pedro", 5000.0f);
+    void deveExibirCEO() {
+        CEO CEO = new CEO("123", "Pedro", 5000.0f);
 
         PessoaVisitor visitor = new PessoaVisitor();
-        assertEquals("Diretor{cpf=123, nome='Pedro', salario=5000.0}", visitor.exibir(diretor));
+        assertEquals("CEO{cpf=123, nome='Pedro', salario=5000.0}", visitor.exibir(CEO));
     }
 
 }

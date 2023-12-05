@@ -13,20 +13,20 @@ public class PessoaVisitor implements Visitor {
     }
 
     @Override
-    public String exibirAtendente(Atendente atendente) {
-        return "Atendente{" +
-                "matricula=" + atendente.getMatricula() +
-                ", nome='" + atendente.getNome() + '\'' +
-                ", setor='" + atendente.getNomeSetor() + '\'' +
+    public String exibirSecretaria(Secretaria secretaria) {
+        return "Secretaria{" +
+                "matricula=" + secretaria.getMatricula() +
+                ", nome='" + secretaria.getNome() + '\'' +
+                ", setor='" + secretaria.getNomeSetor() + '\'' +
                 '}';
     }
 
     @Override
-    public String exibirDiretor(Diretor diretor) {
-        return "Diretor{" +
-                "cpf=" + diretor.getCPF() +
-                ", nome='" + diretor.getNome() + '\'' +
-                ", salario=" + diretor.getSalario() +
+    public String exibirCEO(CEO CEO) {
+        return "CEO{" +
+                "cpf=" + CEO.getCPF() +
+                ", nome='" + CEO.getNome() + '\'' +
+                ", salario=" + CEO.getSalario() +
                 '}';
     }
 
