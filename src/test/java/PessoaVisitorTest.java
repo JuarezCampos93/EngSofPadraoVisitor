@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class PessoaVisitorTest {
     @Test
     void deveExibirSecretaria() {
-        Secretaria aluno = new Secretaria(1, "Ana", new Setor("Vendas"));
+        Secretaria secretaria = new Secretaria(1, "Ana", new Setor("Vendas"));
 
         PessoaVisitor visitor = new PessoaVisitor();
-        assertEquals("Secretaria{matricula=1, nome='Ana', setor='Vendas'}", visitor.exibir(aluno));
+        assertEquals("Secretaria{matricula=1, nome='Ana', setor='Vendas'}", visitor.exibir(secretaria));
     }
 
     @Test
